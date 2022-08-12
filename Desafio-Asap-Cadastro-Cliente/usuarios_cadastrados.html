@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários Cadastrados</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/tabela.css">
+    <link rel="stylesheet" href="css/buscar.css">
+    <link rel="stylesheet" href="css/button.css">
+</head>
+<body>
+
+    <section class="menu">
+        <header >
+            <a href="cadastro_cliente.html" target="Cadasntro de Cliente" class="lista__cliente">Cadastro Cliente</a>
+            <a href="cadastro_apolice.html" target="Cadasntro de Apolices" class="lista__apolice">Cadastro Apólices</a>
+            <a href="usuarios_cadastrados.html" target="Cadasntro de Apolices" class="lista__usuario">Usuários Cadastrados</a>
+        </header>     
+        </header>
+    </section>
+    
+    <section class="tabela">
+
+            <div class="tabela__titulo">
+                <h1 class="">Clientes Cadastrados</h1>
+            </div>
+
+            <div class="tabela__caixa__imagem">
+                <img src="img/clientes.jpg" class="tabela__imagem">
+            </div>
+
+            <div class="tabela__busca">
+                <input type="text" class="texto__Busca " placeholder="Buscar Cliente...">
+                <a class="botao__busca"><img src="img/search.png" alt="lupa" class="botao__imagem"></a>
+              </div>
+
+        <table id="tableClient" class="tabela__cliente">
+            <tr class="tabela__cabecalho">
+                <th class="tabela__valores__col modal-field">Nome</th>
+                <th class="tabela__valores__col modal-field">CPF</th>
+                <th class="tabela__valores__col modal-field">Cidade</th>
+                <th class="tabela__valores__col modal-field">UF</th>
+            </tr>
+
+            <tbody>
+
+
+            </tbody>
+        </table>
+    </section>
+   
+
+    <script src="service/main.js"></script>
+    
+</body>
+</html>

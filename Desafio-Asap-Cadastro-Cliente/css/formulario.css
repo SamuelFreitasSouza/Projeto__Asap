@@ -1,0 +1,99 @@
+.formulario{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    margin:2px 200px ;
+    border: 0;
+}
+
+.formulario__cabecalho{
+    
+    padding-bottom: 30px;
+
+}
+
+.formulario__caixa{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    padding: 10px;
+    width: 68%;
+
+}
+.formulario__botoes{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 15px;
+}
+
+.formulario__botao{
+    justify-content:center;
+    padding:10px 20px 10px 20px;
+    margin: 10%;
+    background-color:cadetblue;
+    border-radius:20px;
+    font-size: 10px;
+    color:white;
+}
+
+.formulario__input{
+    display:flex;
+    width: 100%;
+    padding: 3px;
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+.formulario__imagem{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items:center;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    
+    
+}
+
+.formulario__caixa__imagem{
+    display:flex;
+    justify-content:column;
+}
+
+.formulario__input__inicio{
+    
+    width: 100%;
+    padding: 3px;
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+.formulario__input__fim{
+    width: 100%;
+    padding: 3px;
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+.formulario__inline{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex: 1;
+}

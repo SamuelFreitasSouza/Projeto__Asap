@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/tabela.css">
+</head>
+<body>
+
+    <section class="menu">
+        <header >
+            <a href="cadastro_cliente.html" target="Cadasntro de Cliente" class="lista__cliente">Cadastro Cliente</a>
+            <a href="cadastro_apolice.html" target="Cadasntro de Apolices" class="lista__apolice">Cadastro Apólices</a>
+            <a href="usuarios_cadastrados.html" target="Cadasntro de Apolices" class="lista__usuario">Usuários Cadastrados</a>
+        </header>     
+        </header>
+    </section>
+    
+    <section class="formulario">
+        
+        <h1 class="formulario__cabecalho">Cadastro Cliente</h1>
+
+        <div class="formulario__caixa__imagem">
+            <img src="img/cliente.jpg" class="formulario__imagem">
+        </div>
+        
+        <form id="form" class="formulario__caixa">
+            <label for="name">Nome</label>
+            <input type="text" id="nome" class="formulario__input" required></input>
+            <label for="cpf">CPF</label>
+            <input type="text" placeholder="000.000.000-00" id="cpf" class="formulario__input" required ></input>
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" class="formulario__input" required></input>
+            <label for="uf">UF</label>
+            <input type="text" id="uf" class="formulario__input" required></input>
+        </form>
+        
+        <footer class="formulario__botoes">
+            <a id="cadastrar" type="button" class="formulario__botao">Cadastrar</a>
+            <a id="cancelar" type="button" class="formulario__botao">Cancelar</a>
+        </footer>
+        
+        
+    </section>
+
+    <script src="service/main.js"></script>
+    
+</body>
+</html>
