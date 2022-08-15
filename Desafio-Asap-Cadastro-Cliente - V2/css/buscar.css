@@ -1,0 +1,29 @@
+.botao__imagem{
+  padding-top:10px;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.botao__busca{
+  padding: 0 10px 2px 10px;
+  border-radius: 50px;
+}
+
+.tabela__busca{
+  display:flex;
+  justify-content:center;
+  margin-left: 50%;
+  
+}
+
+.texto__Busca{
+    padding: 2px 10px 2px 10px;
+    text-align: left;
+    width: 100%;
+    padding: 3px;
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}

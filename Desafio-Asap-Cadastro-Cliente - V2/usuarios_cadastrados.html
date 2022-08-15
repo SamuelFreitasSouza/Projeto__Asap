@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários Cadastrados</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/tabela.css">
+    <link rel="stylesheet" href="css/buscar.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+
+    <section class="menu">
+        <header >
+            <a href="cadastro_cliente.html"  target="_self" class="lista__cliente">Cadastro Cliente</a>
+            <a href="cadastro_apolice.html" target="_self" class="lista__apolice">Cadastro Apólices</a>
+            <a href="usuarios_cadastrados.html" target="_self"class="lista__usuario">Usuários Cadastrados</a>
+            <a href="apolice_cadastrada.html" target="_self"class="lista__usuario">Apolices Cadastradas</a>
+        </header>     
+        </header>
+    </section>
+    
+    <section class="tabela">
+
+            <div class="tabela__titulo">
+                <h1 class="">Clientes Cadastrados</h1>
+            </div>
+
+            <div class="tabela__caixa__imagem">
+                <img src="img/clientes.jpg" class="tabela__imagem">
+            </div>
+
+            <div class="newClient">
+                <button type="button" class="novo_Cliente" id="cadastrarCliente">Cadastrar Novo Cliente</button>
+            </div>
+
+        <table id="tableClient" class="tabela__cliente">
+            <tr class="tabela__cabecalho">
+                <th class="tabela__valores__col ">Nome</th>
+                <th class="tabela__valores__col ">CPF</th>
+                <th class="tabela__valores__col ">Cidade</th>
+                <th class="tabela__valores__col ">UF</th>
+            </tr>
+
+            <tbody>
+
+
+            </tbody>
+        </table>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente"
+                        required>
+                    <input type="cpf" id="cpf" class="modal-field" placeholder="CPF do Cliente" required>
+                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente" required>
+                    <input type="text" id="uf" class="modal-field" placeholder="UF do Cliente" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="cadastrar__novo__cliente__green">Salvar</button>
+                    <button id="cancelar" class="cadastrar__novo__cliente__red">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+        
+    </section>
+   
+
+    <script src="service/main.js"></script>
+    
+</body>
+</html>

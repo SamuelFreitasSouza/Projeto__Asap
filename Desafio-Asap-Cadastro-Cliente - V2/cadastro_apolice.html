@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Apólices </title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/tabela.css">
+
+<body>
+
+    <section class="menu">
+        <header class="cabecalho">
+            <a href="cadastro_cliente.html"  target="_self" class="lista__cliente">Cadastro Cliente</a>
+            <a href="cadastro_apolice.html" target="_self" class="lista__apolice">Cadastro Apólices</a>
+            <a href="usuarios_cadastrados.html" target="_self"class="lista__usuario">Usuários Cadastrados</a>
+            <a href="apolice_cadastrada.html" target="_self"class="lista__usuario">Apolices Cadastradas</a>
+        </header>
+    </section>
+
+
+
+
+    <section class="formulario">
+
+        <h1 class="formulario__cabecalho">Cadastro Apólioces</h1>
+
+        <div class="formulario__caixa__imagem">
+            <img src="img/apolice.jpg" class="formulario__imagem">
+        </div>
+
+        <form class="formulario__caixa">
+            <div class="formulario__caixa">
+                <label for="numero">Número da Apólice</label>
+                <input type="number" id="numero" class="formulario__input" required></input>
+            </div>
+            <div class="formulario__inline">
+                <div class="formulario__caixa">
+                    <label for="virgencia">Início Virgência</label>
+                    <input type="date" id="inicio" placeholder="00/00/00" class="formulario__input__inicio" required></input>
+                </div>
+                <div class="formulario__caixa">
+                    <label for="virgencia">Fim Virgência</label>
+                    <input type="date" id="fim" placeholder="00/00/00" class="formulario__input__fim" required></input>
+                </div>
+            </div>
+            
+            <div class="formulario__caixa">
+                <label for="placa do veiculo">Placa do Veículo</label>
+                <input type="text" id="placa" class="formulario__input" required></input>
+            </div>
+            <div class="formulario__caixa">
+                <label for="valor">Valor</label>
+                <input type="number" id="valor" class="formulario__input" required></input>
+                <div class="formulario__botoes">
+                    <a id="cadastrar_apolice" type="button" class="formulario__botao">Cadastrar</a>
+                    <a id="cancelar"  type="button" class="formulario__botao">Cancelar</a>
+                </div>
+
+            </div>
+        </form>    
+    </section>
+
+    <script src="service/cadastro_apolice.js"></script>
+
+</body>
+
+</html>

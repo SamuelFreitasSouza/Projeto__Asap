@@ -1,0 +1,74 @@
+.tabela{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width:850px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+    
+}
+
+.tabela__cliente{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+    margin-left: 50%;
+}
+
+.tabela__valores{
+    padding:10px;
+    text-align:center;
+    font-size:12px
+}
+
+.tabela__valores__col{
+    padding:10px;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.tabela__titulo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 50%;
+    padding-top:40px
+}
+
+.tabela__botoes{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 15px;
+    margin-left: 20%;
+}
+
+.tabela__botao{
+    padding:10px 20px 10px 20px;
+    margin:10px;
+    background-color:cadetblue;
+    border-radius:20px;
+    font-size: 10px;
+    color:white;
+}
+
+.tabela__caixa__imagem{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 50%;
+}
+
+.tabela__imagem{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}

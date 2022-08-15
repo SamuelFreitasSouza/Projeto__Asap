@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apolices Cadastradas</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/tabela.css">
+    <link rel="stylesheet" href="css/buscar.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+
+    <section class="menu">
+        <header >
+            <a href="cadastro_cliente.html"  target="_self" class="lista__cliente">Cadastro Cliente</a>
+            <a href="cadastro_apolice.html" target="_self" class="lista__apolice">Cadastro Apólices</a>
+            <a href="usuarios_cadastrados.html" target="_self"class="lista__usuario">Usuários Cadastrados</a>
+            <a href="apolice_cadastrada.html" target="_self"class="lista__usuario">Apolices Cadastradas</a>
+        </header>     
+        </header>
+    </section>
+    
+    <section class="tabela">
+
+            <div class="tabela__titulo">
+                <h1 class="">Apólices Cadastradas</h1>
+            </div>
+
+            <div class="tabela__caixa__imagem">
+                <img src="img/clientes.jpg" class="tabela__imagem">
+            </div>
+
+            <div class="newClient">
+                <button type="button" class="novo_Cliente" id="cadastrarApolice">Cadastrar Nova Apólice</button>
+            </div>
+
+        <table id="tableClient" class="tabela__cliente">
+            <tr class="tabela__cabecalho">
+                <th class="tabela__valores__col ">Número da Apólice</th>
+                <th class="tabela__valores__col ">Data Início</th>
+                <th class="tabela__valores__col ">Data Fim</th>
+                <th class="tabela__valores__col ">Placa do Veículo</th>
+                <th class="tabela__valores__col ">Valor</th>
+            </tr>
+
+            <tbody>
+
+
+            </tbody>
+        </table>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Nova Apólice</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="nuber" id="numeroApolice" data-index="new" class="modal-field" placeholder="Número da Apólice"
+                        required>
+                    <input type="date" id="inicioVirgencia" class="modal-field" placeholder="Início da Virgência" required>
+                    <input type="date" id="fimVirgencia" class="modal-field" placeholder="Fim da Virgência" required>
+                    <input type="text" id="placaVeiculo" class="modal-field" placeholder="Placa do Veículo" required>
+                    <input type="number" id="valor" class="modal-field" placeholder="Valor" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="cadastrar__novo__cliente__green">Salvar</button>
+                    <button id="cancelar" class="cadastrar__novo__cliente__red">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+        
+    </section>
+   
+
+    <script src="service/cadastro_apolice.js"></script>
+    
+</body>
+</html>
